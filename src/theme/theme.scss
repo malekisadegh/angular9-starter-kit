@@ -1,0 +1,72 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+@import "./iransans.scss";
+@import "./mat-icon.scss";
+@import "./common";
+
+html {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+label,
+legend,
+input,
+textarea,
+option,
+select,
+ul,
+li,
+ol,
+div,
+strong {
+  /* stylelint-disable */
+  font-family: IRANSans !important;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.gradient-green {
+  background: #2e7d32;
+  background: linear-gradient(50deg, #c5d429, #2e7d32);
+  color: #fff;
+}
+.gradient-red {
+  background: #d50000;
+  background: linear-gradient(50deg, #ff9e80, #d50000);
+  color: #fff;
+}
+
+.gradient-orange {
+  background: #ff7043;
+  background: linear-gradient(50deg, #ffd86f, #ff7043);
+  color: #fff;
+}
+
+.gradient-pink {
+  background: #e91e63;
+  background: linear-gradient(50deg, #f59e99, #e91e63);
+  color: #fff;
+}
+.gradient-gray {
+  background: #263238;
+  background: linear-gradient(50deg, #8ef9fe, #263238);
+  color: #fff;
+}

@@ -1,0 +1,63 @@
+@import "~src/theme/theme-variables";
+
+.small-box {
+  display: flex;
+  position: relative;
+  padding: 0 15px;
+  border-radius: 10px;
+  margin: 0 2.5%;
+  &:nth-child(1) {
+    //gradient-purple
+    background: #7873f5;
+    background: linear-gradient(50deg, #ff6ec4, #7873f5);
+  }
+
+  &:nth-child(2) {
+    //gradient-teal
+    background: #00796b;
+    background: linear-gradient(50deg, #a9dc7b, #00796b);
+  }
+
+  &:nth-child(3) {
+    //gradient-indigo
+    background: #303f9f;
+    background: linear-gradient(50deg, #2ec6ff, #303f9f);
+  }
+
+  &:nth-child(4) {
+    //gradient-amber
+    background: #e65100;
+    background: linear-gradient(50deg, #ffba3a, #e65100);
+  }
+
+  .inner {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    color: $white;
+  }
+
+  p {
+    font-size: 15px;
+    color: $light;
+  }
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 25%;
+    line-height: 0;
+    opacity: 0.3;
+    color: $white;
+
+    .mat-icon {
+      font-size: 54px;
+    }
+  }
+}

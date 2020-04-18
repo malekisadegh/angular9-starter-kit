@@ -1,0 +1,60 @@
+<form [formGroup]="branchInsertRequest">
+  <ng-template matStepLabel>Fill out your address</ng-template>
+  <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <mat-form-field fxFlex="50">
+      <mat-label>{{ 'facility type' | translate }}</mat-label>
+      <mat-select formControlName="facilityType">
+        <mat-option *ngFor="let facilityType of facilityTypeList" [value]="facilityType.value">
+          {{ facilityType.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="50">
+      <mat-label>{{ 'request subject' | translate }}</mat-label>
+      <mat-select formControlName="requestSubject">
+        <mat-option *ngFor="let requestSubject of requestSubjectList" [value]="requestSubject.value">
+          {{ requestSubject.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="50">
+      <mat-label>{{ 'use case' | translate }}</mat-label>
+      <mat-select formControlName="requestUseCase">
+        <mat-option *ngFor="let useCase of useCaseList" [value]="useCase.value">
+          {{ useCase.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="50">
+      <mat-label>{{ 'customer type' | translate }}</mat-label>
+      <mat-select formControlName="clientType">
+        <mat-option *ngFor="let clientType of clientTypeList" [value]="clientType.value">
+          {{ clientType.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fxFlex="50">
+      <mat-label>{{ 'customer Number' | translate }}</mat-label>
+      <input matInput formControlName="customerNo" required />
+    </mat-form-field>
+  </div>
+  <div class="ltr">
+    <button
+      mat-raised-button
+      matStepperNext
+      color="primary"
+      (click)="submitForm()"
+      [disabled]="branchInsertRequest.invalid"
+    >
+      {{ 'insert' | translate }}
+    </button>
+  </div>
+</form>
+
+<pre>
+  {{ branchInsertRequest.value | json }}
+</pre>

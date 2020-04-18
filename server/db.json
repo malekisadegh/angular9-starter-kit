@@ -1,0 +1,64 @@
+{
+  "menu": [
+    {
+      "title": "صفحه اصلی",
+      "icon": "home",
+      "link": "/home",
+      "home": true
+    },
+    {
+      "title": "مدیریت درخواست های اعتباری",
+      "icon": "credit_card",
+      "children": [
+        {
+          "title": "ثبت درخواست",
+          "link": "/stepper"
+        },
+        {
+          "title": "پیگیری درخواست",
+          "link": "/list"
+        }
+      ]
+    },
+    {
+      "title": "لیست درخواست های اینترنتی",
+      "icon": "list",
+      "link": "/InternetRequestsList"
+    },
+    {
+      "title": "استعلامات عمومی",
+      "icon": "group",
+      "link": "/Inquiry"
+    },
+    {
+      "title": "فروش اقساطی",
+      "icon": "av_timer",
+      "link": "/Leasing"
+    },
+    {
+      "title": "پیشنهاد تسهیلات مرابحه",
+      "icon": "flare",
+      "link": "/OfferWorkingFacilities"
+    },
+    {
+      "title": "عقد قرض الحسنه",
+      "icon": "tonality",
+      "link": "/ContractBorrowMoney"
+    },
+    {
+      "title": "عقد خرید دین",
+      "icon": "donut_small",
+      "link": "/ContractDebtPurchase"
+    },
+    {
+      "title": "پیگیری درخواست",
+      "icon": "search",
+      "link": "/SearchRequest"
+    },
+    {
+      "title": "درخواست شعبه",
+      "icon": "business",
+      "link": "/BranchRequest"
+    }
+  ]
+}

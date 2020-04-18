@@ -1,0 +1,16 @@
+<app-header (sidenavChange)="onSideNaveChange($event)"></app-header>
+<mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+  <mat-sidenav
+    [opened]="showSidenav"
+    [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [fixedInViewport]="mobileQuery.matches"
+    class="top-gap"
+  >
+    <app-side-menu></app-side-menu>
+  </mat-sidenav>
+  <mat-sidenav-content class="{{ showSidenav ? 'top-gap right-fixture' : 'top-gap' }}">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

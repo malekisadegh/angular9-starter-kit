@@ -1,0 +1,37 @@
+.fa {
+  vertical-align: middle;
+}
+.page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+.centered-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.css3-loader {
+  width: 100px;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 3px solid #fa9bb9;
+  animation: ji-loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes ji-loader {
+  from {
+    transform: scale(0.75);
+  }
+
+  to {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}

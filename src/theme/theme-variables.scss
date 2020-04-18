@@ -1,0 +1,77 @@
+/*
+ * Application global variables.
+ */
+
+// Set Font Awesome font path
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+
+//
+// Color system
+//
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #5e72e4;
+$indigo: #5603ad;
+$purple: #8965e0;
+$pink: #f3a4b5;
+$red: #f5365c;
+$orange: #fb6340;
+$yellow: #ffd600;
+$green: #2dce89;
+$teal: #11cdef;
+$cyan: #2bffc6;
+$white: #fff;
+$gray: #8898aa;
+$gray-dark: #32325d;
+$light: #ced4da;
+$lighter: #e9ecef;
+$primary: #5e72e4;
+$secondary: #f4f5f7;
+$success: #2dce89;
+$info: #11cdef;
+$warning: #fb6340;
+$danger: #f5365c;
+$light: #edf1f7;
+$dark: #212529;
+$default: #172b4d;
+$neutral: #fff;
+$darker: black;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+);
+
+$topGap: 64px;
+
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.

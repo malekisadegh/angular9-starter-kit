@@ -1,0 +1,6 @@
+<mat-list role="list">
+  <mat-list-item class="menu-item" role="listitem" *ngFor="let menuItem of menuList">
+    <mat-icon class="menu-icon">{{ menuItem.icon }}</mat-icon>
+    <a [routerLink]="menuItem.link ? menuItem.link.toLowerCase() : ''">{{ menuItem.title }}</a>
+  </mat-list-item>
+</mat-list>

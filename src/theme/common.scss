@@ -1,0 +1,17 @@
+pre {
+  direction: ltr;
+  background: #eaeaea;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+
+.mat-form-field {
+  margin-bottom: 15px;
+}

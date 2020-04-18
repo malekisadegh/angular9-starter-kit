@@ -1,0 +1,21 @@
+<widget-panel icon="business" [title]="componentTitle">
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <ng-template matStepLabel>{{ 'Insert request' | translate }}</ng-template>
+      <branch-insert-request></branch-insert-request>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>{{ 'view request' | translate }}</ng-template>
+      <h1>secondFormGroup</h1>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</widget-panel>

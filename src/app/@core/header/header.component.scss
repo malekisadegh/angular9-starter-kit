@@ -1,0 +1,51 @@
+@import "../../../theme/theme-variables";
+
+.app-toolbar {
+  position: fixed;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.app-name {
+  display: flex;
+
+  h1 {
+    align-self: center;
+    margin-right: 8px;
+  }
+}
+
+.navbar {
+  margin-bottom: 10;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.header-nav {
+  float: left;
+}
+
+.user-thumbnail {
+  border-radius: 50%;
+  border: 1px solid #333;
+  display: block;
+  height: 46px;
+  width: 46px;
+  float: left;
+  overflow: hidden;
+  img {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+.user-name {
+  float: left;
+  font-size: 12px;
+  margin: 5px 10px;
+  color: #fff;
+  line-height: 20px;
+  text-align: left;
+}

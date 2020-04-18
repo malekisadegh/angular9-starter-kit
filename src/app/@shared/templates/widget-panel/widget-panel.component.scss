@@ -1,0 +1,25 @@
+@import "~src/theme/theme-variables";
+
+.widget-panel-wrapper {
+  padding: 15px;
+
+  .widget-panel-tittle {
+    display: flex;
+    align-items: start;
+
+    .widget-panel-tittle-text {
+      font-size: 18px;
+    }
+
+    .widget-panel-icon {
+      margin: 0 10px 0 5px;
+    }
+  }
+
+  .widget-panel-content {
+    background-color: $white;
+    border-radius: 3px;
+    box-shadow: 1px 0 2px #ccc;
+    padding: 3px;
+  }
+}
