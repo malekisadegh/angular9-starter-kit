@@ -1,45 +1,11 @@
-<div class="small-box gradient-purple" fxFlex="20">
+<div class="small-box gradient-purple" fxFlex="20" *ngFor="let menuItem of menuList">
   <div class="inner">
-    <a routerLink="/branchrequest">
-      <h3>درخواست شعبه</h3>
-      <p>ایجاد درخواست تسهیلات</p>
+    <a routerLink="{{ menuItem.link }}">
+      <h3>{{ menuItem.title }}</h3>
+      <p>{{ menuItem.description }}</p>
     </a>
   </div>
   <div class="icon">
-    <mat-icon class="menu-icon">business</mat-icon>
-  </div>
-</div>
-
-<div class="small-box gradient-purple" fxFlex="20">
-  <div class="inner">
-    <a routerLink="/branchrequest">
-      <h3>درخواست شعبه</h3>
-      <p>ایجاد درخواست تسهیلات</p>
-    </a>
-  </div>
-  <div class="icon">
-    <mat-icon class="menu-icon">business</mat-icon>
-  </div>
-</div>
-<div class="small-box gradient-purple" fxFlex="20">
-  <div class="inner">
-    <a routerLink="/branchrequest">
-      <h3>درخواست شعبه</h3>
-      <p>ایجاد درخواست تسهیلات</p>
-    </a>
-  </div>
-  <div class="icon">
-    <mat-icon class="menu-icon">business</mat-icon>
-  </div>
-</div>
-<div class="small-box gradient-purple" fxFlex="20">
-  <div class="inner">
-    <a routerLink="/branchrequest">
-      <h3>درخواست شعبه</h3>
-      <p>ایجاد درخواست تسهیلات</p>
-    </a>
-  </div>
-  <div class="icon">
-    <mat-icon class="menu-icon">business</mat-icon>
+    <mat-icon class="menu-icon">{{ menuItem.icon }}</mat-icon>
   </div>
 </div>

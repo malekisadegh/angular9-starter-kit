@@ -9,10 +9,9 @@ import { ApiPrefixInterceptor } from './http/api-prefix.interceptor';
 import { ServerErrorInterceptor } from './http/server-error.interceptor';
 import { GlobalErrorHandler } from './http/global-error-handler';
 
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-
 @NgModule({
-  imports: [CommonModule, HttpClientModule, TranslateModule, RouterModule, MatSnackBarModule],
+  imports: [CommonModule, HttpClientModule, TranslateModule, RouterModule],
+  exports: [],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,

@@ -45,8 +45,8 @@ export class AppComponent implements OnInit, OnDestroy {
     if (environment.production) {
       Logger.enableProductionMode();
     }
-
-    log.debug('init');
+    /* this.i18nService.language = environment.defaultLanguage;*/
+    /* console.log( environment.defaultLanguage);*/
 
     // Setup translations
     this.i18nService.init(environment.defaultLanguage, environment.supportedLanguages);

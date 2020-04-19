@@ -2,8 +2,10 @@
  * Global application theme.
  * Framework overrides and customization goes here.
  */
+/* stylelint-disable */
 
 @import "./iransans.scss";
+@import "./vazir.scss";
 @import "./mat-icon.scss";
 @import "./common";
 
@@ -26,17 +28,22 @@ a,
 span,
 label,
 legend,
-input,
-textarea,
-option,
-select,
 ul,
 li,
 ol,
 div,
 strong {
-  /* stylelint-disable */
   font-family: IRANSans !important;
+}
+input,
+button,
+textarea,
+option,
+select {
+  font-family: vazir !important;
+  span {
+    font-family: vazir !important;
+  }
 }
 a {
   text-decoration: none;

@@ -1,6 +1,8 @@
 import { DateAdapter } from '@angular/material/core';
 import * as jalaliMoment from 'jalali-moment';
 
+const persianMap = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+
 export const PERSIAN_DATE_FORMATS = {
   parse: {
     dateInput: 'jYYYY/jMM/jDD',
@@ -46,10 +48,13 @@ export class MaterialPersianDateAdapter extends DateAdapter<jalaliMoment.Moment>
   }
 
   getDateNames(): string[] {
-    const valuesArray = Array(31);
+    let valuesArray = Array(31);
     for (let i = 0; i < 31; i++) {
       valuesArray[i] = String(i + 1);
     }
+    valuesArray = valuesArray.map((chr) => {
+      return this.convertNumbers2Persian(chr);
+    });
     return valuesArray;
   }
 
@@ -65,7 +70,7 @@ export class MaterialPersianDateAdapter extends DateAdapter<jalaliMoment.Moment>
   }
 
   getYearName(date: jalaliMoment.Moment): string {
-    return this.clone(date).jYear().toString();
+    return this.convertNumbers2Persian(this.clone(date).jYear().toString());
   }
 
   getFirstDayOfWeek(): number {
@@ -168,5 +173,11 @@ export class MaterialPersianDateAdapter extends DateAdapter<jalaliMoment.Moment>
       return date;
     }
     return super.deserialize(value);
+  }
+
+  convertNumbers2Persian(string: string): string {
+    return string.replace(/\d/g, (c: any): string => {
+      return persianMap[parseInt(c, 10)];
+    });
   }
 }
