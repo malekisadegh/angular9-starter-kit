@@ -5,9 +5,11 @@ import { LoaderComponent } from './loader/loader.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { WidgetPanelComponent } from '@shared/templates/widget-panel/widget-panel.component';
+
 @NgModule({
   imports: [CommonModule, MaterialModule, TranslateModule.forRoot({ defaultLanguage: 'fa' }), FlexLayoutModule],
-  declarations: [LoaderComponent],
-  exports: [LoaderComponent, TranslateModule, FlexLayoutModule, MaterialModule],
+  declarations: [LoaderComponent, WidgetPanelComponent],
+  exports: [LoaderComponent, TranslateModule, FlexLayoutModule, MaterialModule, WidgetPanelComponent],
 })
 export class SharedModule {}

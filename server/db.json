@@ -46,9 +46,9 @@
       "link": "/ContractBorrowMoney"
     },
     {
-      "title": "عقد خرید دین",
+      "title": "لیزینگ",
       "icon": "donut_small",
-      "link": "/ContractDebtPurchase"
+      "link": "/leasing"
     },
     {
       "title": "پیگیری درخواست",

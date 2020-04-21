@@ -2,7 +2,9 @@
 
 .widget-panel-wrapper {
   padding: 15px;
-
+  margin-bottom: 100px;
+  direction: rtl;
+  text-align: right;
   .widget-panel-tittle {
     display: flex;
     align-items: start;

@@ -10,12 +10,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { BranchRequestComponent } from './components/branch-request/branch-request.component';
-import { WidgetPanelComponent } from '@shared/templates/widget-panel/widget-panel.component';
 import { SharedModule } from '@shared/shared.module';
 import { InsertRequestComponent } from './components/insert-request/insert-request.component';
 
 @NgModule({
-  declarations: [BranchRequestComponent, WidgetPanelComponent, InsertRequestComponent],
+  declarations: [BranchRequestComponent, InsertRequestComponent],
   imports: [
     CommonModule,
     SharedModule,
